@@ -1,6 +1,4 @@
-pipeline{
-    agent any
-        stages{
+node{
             stage('git clone'){
                 steps{
                 git url: 'https://github.com/deepak410/simple-java-maven-app.git'
@@ -19,4 +17,3 @@ pipeline{
             }
         }
         
-    }
